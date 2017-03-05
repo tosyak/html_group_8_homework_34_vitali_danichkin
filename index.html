@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/font-awesome.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/slick.css">
+    <link rel="stylesheet" href="styles/slick-theme.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<header class="header clearfix">
+    <div class="container">
+        <div class="logo">
+            <a href="#"><img src="uploads/logo.png" alt="logo"></a>
+        </div>
+        <div class="menu">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <div class="navigation clearfix">
+                <nav>
+                    <ul>
+                        <li><a data-scroll href="#mainslide">main slide</a></li>
+                        <li><a data-scroll href="#gallery">gallery</a></li>
+                        <li><a data-scroll href="#partners">clients say</a></li>
+                        <li><a data-scroll href="#contact">contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <button id="popup-open" class="callus">call us</button>
+    </div>
+
+</header>
+<section id="mainslide" class="main-slide">
+    <div class="slider">
+        <div>
+            <img src="uploads/bg-header.jpg" alt="mainslide" width="1920" height="697">
+        </div>
+        <div>
+            <img src="uploads/bg-header.jpg" alt="mainslide" width="1920" height="697">
+        </div>
+        <div>
+            <img src="uploads/bg-header.jpg" alt="mainslide" width="1920" height="697">
+        </div>
+
+    </div>
+</section>
+<section id="gallery" class="gallery">
+    <div class="container">
+        <h2 class="title">gallery</h2>
+        <div class="gallery-block">
+            <div class="img">
+                <img src="uploads/gallery1.jpg" alt="gallery" width="360" height="243">
+            </div>
+            <div class="img">
+                <img src="uploads/gallery2.jpg" alt="gallery" width="360" height="243">
+            </div>
+            <div class="img">
+                <img src="uploads/gallery3.jpg" alt="gallery" width="360" height="243">
+            </div>
+            <div class="img">
+                <img src="uploads/gallery4.jpg" alt="gallery" width="360" height="243">
+            </div>
+            <div class="img">
+                <img src="uploads/gallery5.jpg" alt="gallery" width="360" height="243">
+            </div>
+            <div class="img">
+                <img src="uploads/gallery6.jpg" alt="gallery" width="360" height="243">
+            </div>
+
+
+        </div>
+    </div>
+</section>
+<section id="partners" class="partners">
+    <div class="container">
+        <div class="partners-wrap">
+            <a href="#"><img src="uploads/salck.png" alt="partner"></a>
+            <a href="#"><img src="uploads/adobe.png" alt="partner"></a>
+            <a href="#"><img src="uploads/google.png" alt="partner"></a>
+            <a href="#"><img src="uploads/facebook.png" alt="partner"></a>
+            <a href="#"><img src="uploads/spotify.png" alt="partner"></a>
+            <a href="#"><img src="uploads/nike.png" alt="partner"></a>
+        </div>
+    </div>
+</section>
+<section  class="comments">
+    <div class="container">
+        <h2 class="title">our clients say</h2>
+        <div class="comments-wrap">
+        <div class="comment-item clearfix">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deleniti doloribus ducimus exercitationem
+                minus numquam quisquam repellat sit, voluptatem voluptates? Deserunt fugit ipsam modi odit officia
+                officiis qui, sed sit.</p>
+            <img src="uploads/client1.jpg" alt="clients">
+            <span><b>Pavliv Yaroslav</b> Web designer</span>
+        </div>
+        <div class="comment-item clearfix">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deleniti doloribus ducimus exercitationem
+                minus numquam quisquam repellat sit, voluptatem voluptates? Deserunt fugit ipsam modi odit officia
+                officiis qui, sed sit.</p>
+            <img src="uploads/client2.jpg" alt="clients">
+            <span><b>John Scott </b> The Fringe</span>
+        </div>
+        </div>
+        <div id="contact" class="contacts-box">
+            <h3>contacts</h3>
+            <p>Sign up for our newsletter to receive updates</p>
+            <form action="">
+            <input type="text" placeholder="Name">
+            <input type="number" placeholder="Phone">
+            <input type="email" placeholder="E-mail">
+            </form>
+            <button>send</button>
+        </div>
+    </div>
+</section>
+<div class="popup">
+    <div class="contacts-box">
+        <h3>contacts</h3>
+        <p>Sign up for our newsletter to receive updates</p>
+        <form action="">
+            <input type="text" placeholder="Name">
+            <input type="number" placeholder="Phone">
+            <input type="email" placeholder="E-mail">
+        </form>
+        <button class="send">send</button>
+    </div>
+</div>
+<div class="overlay"></div>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="vendor/sticky-header.js"></script>
+<script src="vendor/slick.js"></script>
+<script src="vendor/smooth-scroll.min.js"></script>
+
+<script>
+    $('.slider').slick({
+        autoplay: true,
+        arrows: false
+
+
+    });
+</script>
+<script>
+    $('#popup-open').click(function () {
+        $('.popup').show()
+    });
+    $('.popup').click(function () {
+        $('.popup').hide()
+    });
+</script>
+<script>
+    smoothScroll.init();
+</script>
+</body>
+</html>
