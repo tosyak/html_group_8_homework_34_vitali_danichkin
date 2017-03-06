@@ -249,71 +249,72 @@ body {
         width: 48%;
     }
 }
-    @media screen and (min-width: 980px) {
-        .container {
-            padding: 0;
-        }
 
-        .header .fa-bars {
-            display: none;
-        }
-
-        .header {
-            position: absolute;
-            top: 0px;
-            left: 0;
-            text-align: left;
-
-        }
-
-        .header .logo {
-            margin: 34px 0 0px 57px;
-        }
-
-        .header .menu {
-            float: none;
-            margin: 23px 0 0 61px;
-        }
-
-        .navigation {
-            display: block;
-            position: static;
-            background: inherit;
-            width: 100%;
-            margin: 0 0 0 0;
-        }
-
-        .navigation ul li {
-            display: inline-block;
-            padding: 0 24px 0 0;
-        }
-
-        .navigation ul li a {
-            display: inline-block;
-        }
-
-        .callus {
-            margin: 25px 22px 21px 0;
-            padding: 13px 48px;
-            float: right;
-        }
-
-        .gallery-block .img {
-            width: 31%;
-        }
-
-        .comment-item {
-            width: 44%;
-        }
-
-
+@media screen and (min-width: 980px) {
+    .container {
+        padding: 0;
     }
-    .fixed {
-        position: fixed;
-        top: 0;
+
+    .header .fa-bars {
+        display: none;
+    }
+
+    .header {
+        position: absolute;
+        top: 0px;
         left: 0;
-        width: 100%;
-        z-index: 10;
+        text-align: left;
+
     }
+
+    .header .logo {
+        margin: 34px 0 0px 57px;
+    }
+
+    .header .menu {
+        float: none;
+        margin: 23px 0 0 61px;
+    }
+
+    .navigation {
+        display: block;
+        position: static;
+        background: inherit;
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+
+    .navigation ul li {
+        display: inline-block;
+        padding: 0 24px 0 0;
+    }
+
+    .navigation ul li a {
+        display: inline-block;
+    }
+
+    .callus {
+        margin: 25px 22px 21px 0;
+        padding: 13px 48px;
+        float: right;
+    }
+
+    .gallery-block .img {
+        width: 31%;
+    }
+
+    .comment-item {
+        width: 44%;
+    }
+
+
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
 
 
