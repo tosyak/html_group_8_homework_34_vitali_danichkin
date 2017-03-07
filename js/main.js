@@ -5,3 +5,20 @@
 $(".hamburger").click(function() {
     $(".menu").toggleClass('menudisplay')
 });
+
+//slider
+$('.slider').slick({
+    autoplay: true,
+    arrows: false
+});
+
+//popup
+$('#popup-open').click(function () {
+    $('.popup').show()
+});
+$('.popup').click(function () {
+    $('.popup').hide()
+});
+
+//scroll
+smoothScroll.init();
