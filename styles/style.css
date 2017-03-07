@@ -22,22 +22,28 @@ body {
     margin: 16px 0 0px 8px;
     float: left;
 }
-
+.header-wrap {
+    position: relative;
+}
+.hamburger {
+    float: right;
+}
 .fa-bars {
     padding: 13px 18px 14px 0;
     color: #222222;
     font-size: 23px;
+    
 }
 
-.navigation {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.8);
-    display: none;
-    top: 38px;
-    right: 0px;
-    width: 320px;
-    z-index: 21;
-}
+/*.navigation {
+  position: absolute;
+ background-color: rgba(255, 255, 255, 0.8);
+ display: none;
+ top: 38px;
+ right: 0px;
+ width: 320px;
+ z-index: 21;
+}*/
 
 .navigation ul {
     list-style: none;
@@ -49,30 +55,39 @@ body {
 }
 
 .navigation ul li a {
-
     text-decoration: none;
-    text-transform: capitalize;
-}
-
-.menu:hover .navigation {
+    text-transform: uppercase;
+    color: #9daeb6;
+    font-size: 12px;
+    width: 100%;
     display: block;
 }
 
+/*.menu:hover .navigation {*/
+    /*display: block;*/
+/*}*/
+
 .header .menu {
-    display: inline-block;
-    float: right;
-    position: relative;
-    margin: 3px 0px 0 0px;
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    top: 50px;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    /*display: none;*/
+}
+.menudisplay {
+    display: none;
 }
 
-.header .menu a {
+/*.header .menu a {
     text-decoration: none;
     text-transform: uppercase;
     padding: 0 0 0 0;
     color: #9daeb6;
     font-size: 12px;
 
-}
+}*/
 
 .header .menu a:hover {
     border-bottom: 2px solid #36aeea;
@@ -87,7 +102,7 @@ body {
     display: inline-block;
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
-    margin: 9px 0 0 0;
+    margin: 9px 84px 0 0;
     text-transform: uppercase;
 }
 
@@ -267,13 +282,20 @@ body {
 
     }
 
+    .fa-bars {
+        display: none;
+    }
+
     .header .logo {
         margin: 34px 0 0px 57px;
     }
 
     .header .menu {
-        float: none;
+        position: static;
         margin: 23px 0 0 61px;
+        display: inline-block;
+        background-color: transparent;
+        width: inherit;
     }
 
     .navigation {
