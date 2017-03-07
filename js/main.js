@@ -16,7 +16,7 @@ $('.slider').slick({
 $('#popup-open').click(function () {
     $('.popup').show()
 });
-$('.popup').click(function () {
+$('.send').click(function () {
     $('.popup').hide()
 });
 
